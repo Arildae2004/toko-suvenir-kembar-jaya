@@ -1,0 +1,21 @@
+{
+  "name": "pusat-oleh-oleh-ntt-kembar-jaya",
+  "version": "1.0.0",
+  "description": "Website Resmi Pusat Oleh-Oleh NTT Kembar Jaya Ende",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "toko-suvenir",
+    "oleh-oleh-ntt",
+    "kembar-jaya",
+    "ende-flores"
+  ],
+  "author": "Aril",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap');
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #1e293b;
+  scroll-behavior: smooth;
+  background-color: #faf8f5;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Pola Kain Tenun NTT Geometris Halus (Subtle Ikat Pattern) */
+.bg-ethnic-pattern {
+  background-color: #1c1917;
+  background-image: radial-gradient(#d97706 0.75px, transparent 0.75px), radial-gradient(#b45309 0.75px, #1c1917 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.bg-warm-pattern {
+  background-color: #fffbf5;
+  background-image: radial-gradient(#fde68a 0.5px, transparent 0.5px), radial-gradient(#fcd34d 0.5px, #fffbf5 0.5px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Pita Border Etnik */
+.ethnic-border-top {
+  border-top: 5px solid;
+  border-image: linear-gradient(90deg, #991b1b, #d97706, #047857, #b45309, #991b1b) 1;
+}
+
+.ethnic-border-bottom {
+  border-bottom: 5px solid;
+  border-image: linear-gradient(90deg, #991b1b, #d97706, #047857, #b45309, #991b1b) 1;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Pulse Glow WhatsApp */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.whatsapp-pulse {
+  animation: pulse-ring 2.2s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/* Animasi Halus */
+.card-hover-effect {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Animation */
+.modal-backdrop {
+  transition: opacity 0.25s ease-out;
+}
+.modal-content {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Badge Glow */
+.status-open {
+  background-color: #10b981;
+  box-shadow: 0 0 10px #10b98188;
+}
+.status-closed {
+  background-color: #ef4444;
+  box-shadow: 0 0 10px #ef444488;
+}
+

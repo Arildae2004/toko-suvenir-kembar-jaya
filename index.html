@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PUSAT OLEH - OLEH NTT "KEMBAR JAYA" | Ende, Flores, NTT</title>
+  <meta name="description" content="Pusat Oleh-Oleh NTT Kembar Jaya di Ende, Flores. Menyediakan aneka makanan khas NTT, kopi Flores, kain tenun ikat Ende, pakaian khas, dan cenderamata terlengkap dengan harga terjangkau." />
+  <meta name="keywords" content="Oleh-oleh NTT, Kembar Jaya Ende, Toko Suvenir Ende, Kopi Flores, Tenun Ikat Ende, Makanan Khas NTT, Cenderamata Flores" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fdf8f6',
+              100: '#f2e8e5',
+              200: '#eaddd7',
+              600: '#b45309',
+              700: '#92400e',
+              800: '#78350f',
+              900: '#451a03',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-[#faf8f5] text-stone-800 antialiased selection:bg-amber-800 selection:text-white flex flex-col min-h-screen">
+
+  <!-- ================= TOP ANNOUNCEMENT BAR ================= -->
+  <aside aria-label="Informasi Jam Buka dan Kontak" class="bg-stone-900 text-stone-300 text-xs py-2 px-4 border-b border-stone-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <!-- Info Jam Operasional Real-time -->
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-stone-800 text-stone-300 font-medium">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-amber-500"></i>
+          <span>Waktu Ende: <strong id="wita-clock-text" class="text-white">--:-- WITA</strong></span>
+        </span>
+        <span class="hidden md:inline text-stone-500">•</span>
+        <span class="hidden md:inline text-stone-400">Buka Setiap Hari (Tutup 20.00 WITA)</span>
+      </div>
+
+      <!-- Quick Action Kontak & Lokasi -->
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1 text-stone-400">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-500"></i>
+          <span>Simpang PLTD, Ende, NTT</span>
+        </span>
+        <span class="text-stone-700">|</span>
+        <a href="https://wa.me/6281338083555" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          <span>0813-3808-3555</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200/80 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo & Brand Name -->
+        <a href="#beranda" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-800 to-amber-950 flex items-center justify-center text-white shadow-md shadow-amber-900/20 group-hover:scale-105 transition-transform">
+            <i data-lucide="gift" class="w-6 h-6 text-amber-300"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-extrabold text-stone-900 text-lg sm:text-xl tracking-tight uppercase group-hover:text-amber-800 transition-colors">KEMBAR JAYA</span>
+              <span class="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-md bg-amber-100 text-amber-800 hidden sm:inline-block">Ende • NTT</span>
+            </div>
+            <p class="text-xs text-stone-500 font-medium tracking-wide">Pusat Oleh-Oleh & Pakaian Khas NTT</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1 text-sm font-semibold text-stone-600">
+          <a href="#beranda" class="px-3.5 py-2 rounded-xl hover:text-amber-900 hover:bg-stone-100 transition-colors">Beranda</a>
+          <a href="#produk" class="px-3.5 py-2 rounded-xl hover:text-amber-900 hover:bg-stone-100 transition-colors">Katalog Produk</a>
+          <a href="#keunggulan" class="px-3.5 py-2 rounded-xl hover:text-amber-900 hover:bg-stone-100 transition-colors">Keunggulan</a>
+          <a href="#tentang" class="px-3.5 py-2 rounded-xl hover:text-amber-900 hover:bg-stone-100 transition-colors">Tentang Kami</a>
+          <a href="#ulasan" class="px-3.5 py-2 rounded-xl hover:text-amber-900 hover:bg-stone-100 transition-colors">Ulasan</a>
+          <a href="#lokasi" class="px-3.5 py-2 rounded-xl hover:text-amber-900 hover:bg-stone-100 transition-colors">Lokasi</a>
+        </nav>
+
+        <!-- Right Side: Status Badge & WhatsApp CTA -->
+        <div class="hidden sm:flex items-center gap-3">
+          <!-- Status Buka Real-time -->
+          <div class="hidden xl:flex items-center gap-2 px-3 py-1.5 rounded-full bg-stone-100 border border-stone-200 text-xs">
+            <span id="store-status-badge" class="w-2.5 h-2.5 rounded-full status-open"></span>
+            <span id="store-status-text" class="font-medium text-stone-700">Memuat status...</span>
+          </div>
+
+          <!-- Tombol WhatsApp -->
+          <a 
+            href="https://wa.me/6281338083555?text=Halo%20Pusat%20Oleh-Oleh%20NTT%20Kembar%20Jaya,%20saya%20ingin%20bertanya%20mengenai%20produk%20oleh-oleh%20khas%20NTT..." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs sm:text-sm flex items-center gap-2 shadow-sm hover:shadow-md transition-all duration-200"
+          >
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Chat WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex items-center gap-2 lg:hidden">
+          <a 
+            href="https://wa.me/6281338083555" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="p-2.5 rounded-xl bg-emerald-600 text-white text-xs font-semibold sm:hidden"
+            title="Chat WhatsApp"
+          >
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+          </a>
+          <button 
+            type="button" 
+            id="mobile-menu-btn" 
+            class="p-2.5 rounded-xl text-stone-700 hover:bg-stone-100 focus:outline-hidden" 
+            aria-label="Buka Menu"
+          >
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MOBILE MENU DRAWER ================= -->
+  <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 backdrop-blur-xs z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  <div id="mobile-menu-drawer" class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-5 border-b border-stone-100 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-xl bg-amber-900 text-white flex items-center justify-center">
+          <i data-lucide="gift" class="w-5 h-5"></i>
+        </div>
+        <span class="font-bold text-stone-900 text-base">KEMBAR JAYA</span>
+      </div>
+      <button type="button" id="mobile-menu-close-btn" class="p-2 text-stone-500 hover:bg-stone-100 rounded-lg">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Links -->
+    <div class="p-5 flex-1 overflow-y-auto space-y-2">
+      <a href="#beranda" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-stone-700 hover:bg-amber-50 hover:text-amber-900 transition-colors">
+        <i data-lucide="home" class="w-5 h-5 text-stone-400"></i> Beranda
+      </a>
+      <a href="#produk" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-stone-700 hover:bg-amber-50 hover:text-amber-900 transition-colors">
+        <i data-lucide="shopping-bag" class="w-5 h-5 text-stone-400"></i> Katalog Produk
+      </a>
+      <a href="#keunggulan" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-stone-700 hover:bg-amber-50 hover:text-amber-900 transition-colors">
+        <i data-lucide="sparkles" class="w-5 h-5 text-stone-400"></i> Keunggulan
+      </a>
+      <a href="#tentang" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-stone-700 hover:bg-amber-50 hover:text-amber-900 transition-colors">
+        <i data-lucide="store" class="w-5 h-5 text-stone-400"></i> Tentang Kami
+      </a>
+      <a href="#ulasan" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-stone-700 hover:bg-amber-50 hover:text-amber-900 transition-colors">
+        <i data-lucide="star" class="w-5 h-5 text-stone-400"></i> Ulasan Pelanggan
+      </a>
+      <a href="#lokasi" class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-stone-700 hover:bg-amber-50 hover:text-amber-900 transition-colors">
+        <i data-lucide="map-pin" class="w-5 h-5 text-stone-400"></i> Lokasi Toko
+      </a>
+    </div>
+
+    <!-- Mobile Drawer Footer -->
+    <div class="p-5 border-t border-stone-100 bg-stone-50 space-y-3">
+      <div class="text-xs text-stone-600 space-y-1">
+        <div class="font-semibold text-stone-900">Jam Operasional:</div>
+        <div>Buka Setiap Hari (Tutup 20.00 WITA)</div>
+      </div>
+      <a 
+        href="https://wa.me/6281338083555" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm flex items-center justify-center gap-2 shadow-md transition-colors"
+      >
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>Chat WhatsApp Langsung</span>
+      </a>
+    </div>
+  </div>
+
+  <main class="flex-1">
+    
+    <!-- ================= HERO SECTION ================= -->
+    <section id="beranda" class="relative overflow-hidden bg-gradient-to-b from-stone-900 via-stone-900 to-stone-950 text-white ethnic-border-bottom">
+      <!-- Background Graphic Accents -->
+      <div class="absolute inset-0 opacity-10 bg-ethnic-pattern pointer-events-none"></div>
+      <div class="absolute -top-40 -right-40 w-96 h-96 bg-amber-600/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-emerald-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Copywriting -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- Rating & Trust Badge -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs sm:text-sm font-medium">
+              <div class="flex text-amber-400">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star-half" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <span class="font-bold text-white">4,0 / 5,0</span>
+              <span class="text-stone-300 font-normal">(29 Ulasan Google)</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+              <span class="text-amber-300 font-medium">Ende, Flores</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight sm:leading-tight">
+              Pusat Oleh-Oleh NTT <br class="hidden sm:inline" />
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-amber-200 to-orange-400">
+                "KEMBAR JAYA"
+              </span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="text-base sm:text-lg text-stone-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+              Toko suvenir dan oleh-oleh khas Nusa Tenggara Timur terlengkap di Ende. Menyediakan aneka makanan khas, kopi Flores otentik, kerajinan cenderamata, serta pakaian &amp; kain tenun ikat tradisional dengan pelayanan ramah dan harga bersahabat.
+            </p>
+
+            <!-- Buttons Action -->
+            <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a 
+                href="https://wa.me/6281338083555?text=Halo%20Pusat%20Oleh-Oleh%20NTT%20Kembar%20Jaya,%20saya%20ingin%20bertanya%20tentang%20produk%20dan%20pemesanan%20oleh-oleh..." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="w-full sm:w-auto px-7 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-lg shadow-emerald-900/40 hover:shadow-emerald-900/60 transform hover:-translate-y-0.5 transition-all"
+              >
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+                <span>Hubungi via WhatsApp</span>
+              </a>
+
+              <a 
+                href="#produk" 
+                class="w-full sm:w-auto px-7 py-4 rounded-xl bg-white/10 hover:bg-white/15 text-white border border-white/20 font-bold text-sm sm:text-base flex items-center justify-center gap-2.5 backdrop-blur-xs transition-all hover:border-white/40"
+              >
+                <i data-lucide="shopping-bag" class="w-5 h-5 text-amber-300"></i>
+                <span>Lihat Katalog Produk</span>
+              </a>
+            </div>
+
+            <!-- Quick Service Note Pascapandemi -->
+            <div class="pt-4 border-t border-white/10 flex items-center justify-center lg:justify-start gap-2 text-xs text-stone-400">
+              <i data-lucide="heart-handshake" class="w-4 h-4 text-rose-400 shrink-0"></i>
+              <span>Toko terus melengkapi ketersediaan produk khas secara bertahap pascapandemi demi kepuasan pelanggan.</span>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Visual Showcase -->
+          <div class="lg:col-span-5">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Main Feature Card -->
+              <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10 bg-stone-800">
+                <img 
+                  src="https://images.unsplash.com/photo-1607344645866-009c320b5ab8?auto=format&fit=crop&w=1000&q=80" 
+                  alt="Kain Tenun Khas NTT dan Oleh-Oleh Kembar Jaya" 
+                  class="w-full h-80 sm:h-96 object-cover object-center"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+                
+                <!-- Bottom Content Overlay -->
+                <div class="absolute bottom-0 inset-x-0 p-6">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wide bg-amber-500 text-stone-950">
+                      Otentik NTT
+                    </span>
+                    <span class="text-xs text-stone-300 font-medium">Bumi Kelimutu, Ende</span>
+                  </div>
+                  <h3 class="font-serif text-xl font-bold text-white">Tenun Ikat, Kopi Flores &amp; Suvenir Khas</h3>
+                  <p class="text-xs text-stone-300 mt-1">Lengkap untuk buah tangan keluarga dan sanak saudara.</p>
+                </div>
+              </div>
+
+              <!-- Floating Info Card: Jam Buka -->
+              <div class="absolute -bottom-6 -left-4 sm:-left-6 bg-white text-stone-900 p-4 rounded-2xl shadow-xl border border-stone-100 flex items-center gap-3.5 max-w-xs card-hover-effect">
+                <div class="w-11 h-11 rounded-xl bg-amber-100 text-amber-900 flex items-center justify-center shrink-0">
+                  <i data-lucide="clock" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <div class="text-[11px] font-bold text-amber-800 uppercase tracking-wider">Buka Setiap Hari</div>
+                  <div class="text-xs font-semibold text-stone-900">Pagi s/d 20.00 WITA</div>
+                  <div class="text-[10px] text-stone-500">Siap melayani kebutuhan oleh-oleh</div>
+                </div>
+              </div>
+
+              <!-- Floating Badge: Ulasan Ramah -->
+              <div class="absolute -top-4 -right-4 sm:-right-6 bg-amber-900/90 backdrop-blur-md text-white p-3.5 rounded-2xl shadow-lg border border-amber-700/50 flex items-center gap-2.5 max-w-[200px]">
+                <i data-lucide="smile" class="w-5 h-5 text-amber-300 shrink-0"></i>
+                <div class="text-[11px] font-medium leading-tight">
+                  <span class="font-bold block">Toko Bersahabat</span>
+                  Ramah &amp; Terjangkau
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Quick Key Metrics Strip -->
+        <div class="mt-16 pt-8 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="p-3">
+            <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">4,0 ★</div>
+            <div class="text-xs text-stone-400 mt-1 font-medium">Rating Google (29 Ulasan)</div>
+          </div>
+          <div class="p-3">
+            <div class="text-2xl sm:text-3xl font-extrabold text-white">3 in 1</div>
+            <div class="text-xs text-stone-400 mt-1 font-medium">Oleh-oleh, Pakaian &amp; Suvenir</div>
+          </div>
+          <div class="p-3">
+            <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">20.00</div>
+            <div class="text-xs text-stone-400 mt-1 font-medium">WITA Tutup Setiap Hari</div>
+          </div>
+          <div class="p-3">
+            <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400">100%</div>
+            <div class="text-xs text-stone-400 mt-1 font-medium">Khas &amp; Otentik NTT</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= KEUNGGULAN TOKO SECTION ================= -->
+    <section id="keunggulan" class="py-16 sm:py-20 bg-white border-b border-stone-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 text-amber-900 inline-block mb-3">
+            Mengapa Memilih Kami?
+          </span>
+          <h2 class="font-serif text-2xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+            Kenyamanan Berbelanja Oleh-Oleh Khas NTT di Ende
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base mt-3">
+            Dedikasi Pusat Oleh-Oleh Kembar Jaya dalam memberikan pengalaman terbaik bagi setiap pengunjung dan wisatawan.
+          </p>
+        </div>
+
+        <!-- 4 Grid Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Card 1 -->
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-300 card-hover-effect transition-all flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center mb-4">
+              <i data-lucide="smile" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-stone-900 text-lg mb-2">Toko yang Bersahabat</h3>
+            <p class="text-stone-600 text-xs sm:text-sm leading-relaxed flex-1">
+              Sebagaimana ulasan pelanggan kami, kami menyambut Anda dengan senyum dan keramahtamahan khas masyarakat Ende yang hangat.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-300 card-hover-effect transition-all flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-red-100 text-red-800 flex items-center justify-center mb-4">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-stone-900 text-lg mb-2">Pilihan Produk Lengkap</h3>
+            <p class="text-stone-600 text-xs sm:text-sm leading-relaxed flex-1">
+              Tersedia lengkap dalam satu tempat: kuliner khas NTT, kerajinan tangan cenderamata, hingga pakaian dan kain tenun ikat.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-300 card-hover-effect transition-all flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center mb-4">
+              <i data-lucide="tag" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-stone-900 text-lg mb-2">Harga Bersahabat &amp; Wajar</h3>
+            <p class="text-stone-600 text-xs sm:text-sm leading-relaxed flex-1">
+              Harga oleh-oleh yang terjangkau untuk semua kalangan, baik untuk suvenir pribadi maupun bingkisan rekan kerja dan keluarga.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-300 card-hover-effect transition-all flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center mb-4">
+              <i data-lucide="navigation" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-bold text-stone-900 text-lg mb-2">Akses Lokasi Mudah</h3>
+            <p class="text-stone-600 text-xs sm:text-sm leading-relaxed flex-1">
+              Terletak strategis di Simpang PLTD Jl. Gatot Soebroto, Ende. Sangat mudah dijangkau dengan kendaraan roda dua maupun roda empat.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= KATALOG PRODUK SECTION ================= -->
+    <section id="produk" class="py-16 sm:py-24 bg-[#faf8f5]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Katalog -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 text-amber-900 inline-block mb-3">
+              Katalog Lengkap
+            </span>
+            <h2 class="font-serif text-2xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+              Pilihan Oleh-Oleh &amp; Pakaian Khas NTT
+            </h2>
+            <p class="text-stone-600 text-sm mt-2 max-w-2xl">
+              Pilih produk yang Anda minati dan pesan langsung melalui WhatsApp dengan konfirmasi stok seketika dari tim kami.
+            </p>
+          </div>
+          <div id="products-count" class="text-xs font-semibold text-stone-500 bg-white px-3.5 py-1.5 rounded-full border border-stone-200 shadow-2xs self-start md:self-auto">
+            Memuat produk...
+          </div>
+        </div>
+
+        <!-- Filter Tabs & Search Bar Container -->
+        <div class="bg-white p-4 sm:p-5 rounded-2xl border border-stone-200/80 shadow-xs mb-8 space-y-4">
+          <div class="flex flex-col lg:flex-row items-center justify-between gap-4">
+            
+            <!-- Category Filter Buttons -->
+            <div class="flex flex-wrap gap-2 w-full lg:w-auto">
+              <button 
+                type="button" 
+                data-category="all" 
+                class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 bg-amber-900 text-white shadow-md cursor-pointer"
+              >
+                Semua Produk
+              </button>
+              <button 
+                type="button" 
+                data-category="makanan" 
+                class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 bg-stone-100 text-stone-700 hover:bg-stone-200 cursor-pointer flex items-center gap-1.5"
+              >
+                <i data-lucide="coffee" class="w-3.5 h-3.5"></i> Makanan &amp; Minuman NTT
+              </button>
+              <button 
+                type="button" 
+                data-category="pakaian" 
+                class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 bg-stone-100 text-stone-700 hover:bg-stone-200 cursor-pointer flex items-center gap-1.5"
+              >
+                <i data-lucide="shirt" class="w-3.5 h-3.5"></i> Kain &amp; Pakaian Tenun
+              </button>
+              <button 
+                type="button" 
+                data-category="kerajinan" 
+                class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 bg-stone-100 text-stone-700 hover:bg-stone-200 cursor-pointer flex items-center gap-1.5"
+              >
+                <i data-lucide="gem" class="w-3.5 h-3.5"></i> Cenderamata &amp; Kerajinan
+              </button>
+            </div>
+
+            <!-- Live Search Input -->
+            <div class="relative w-full lg:w-72">
+              <i data-lucide="search" class="w-4 h-4 text-stone-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+              <input 
+                type="text" 
+                id="search-input" 
+                placeholder="Cari kopi, tenun, suvenir..." 
+                class="w-full pl-10 pr-9 py-2 rounded-xl border border-stone-200 focus:outline-hidden focus:border-amber-700 focus:ring-2 focus:ring-amber-200 text-xs sm:text-sm bg-stone-50"
+              />
+              <button 
+                type="button" 
+                id="search-clear-btn" 
+                class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-600"
+                title="Hapus pencarian"
+              >
+                <i data-lucide="x" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Products Grid (Filled dynamically via app.js) -->
+        <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <!-- Diisi otomatis oleh JavaScript -->
+        </div>
+
+        <!-- Empty Results State -->
+        <div id="no-results" class="hidden text-center py-16 px-4 bg-white rounded-2xl border border-stone-200">
+          <div class="w-16 h-16 rounded-full bg-stone-100 text-stone-400 flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="package-search" class="w-8 h-8"></i>
+          </div>
+          <h3 class="font-bold text-stone-800 text-lg">Produk Tidak Ditemukan</h3>
+          <p class="text-stone-500 text-xs sm:text-sm max-w-md mx-auto mt-1 mb-5">
+            Kami tidak dapat menemukan produk yang sesuai dengan kata kunci Anda. Anda juga dapat bertanya langsung ke toko via WhatsApp.
+          </p>
+          <div class="flex items-center justify-center gap-3">
+            <button 
+              type="button" 
+              id="reset-filter-btn" 
+              class="px-4 py-2 rounded-xl bg-stone-100 hover:bg-stone-200 text-stone-700 font-semibold text-xs"
+            >
+              Reset Filter
+            </button>
+            <a 
+              href="https://wa.me/6281338083555?text=Halo%20Kembar%20Jaya,%20saya%20mencari%20produk%20khusus%20oleh-oleh%20NTT..." 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs flex items-center gap-1.5"
+            >
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Tanya Stok Khusus via WA
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= TENTANG KAMI SECTION ================= -->
+    <section id="tentang" class="py-16 sm:py-24 bg-white border-y border-stone-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left: Image Collage -->
+          <div class="lg:col-span-6 space-y-4">
+            <div class="relative rounded-3xl overflow-hidden shadow-xl border border-stone-200">
+              <img 
+                src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=80" 
+                alt="Kerajinan Kain Tenun NTT Kembar Jaya" 
+                class="w-full h-80 sm:h-96 object-cover object-center"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent"></div>
+              <div class="absolute bottom-5 left-5 right-5 text-white">
+                <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-amber-600/90 backdrop-blur-xs">
+                  Kebanggaan Lokal Flores
+                </span>
+                <h3 class="font-serif text-lg sm:text-xl font-bold mt-2">
+                  Melestarikan Tradisi &amp; Kerajinan Asli Ende
+                </h3>
+              </div>
+            </div>
+
+            <!-- Catatan Pemilik Pascapandemi (Callout Box) -->
+            <div class="p-5 rounded-2xl bg-amber-50/80 border border-amber-200/80 text-amber-950 flex items-start gap-3.5">
+              <div class="p-2 rounded-xl bg-amber-200/80 text-amber-900 shrink-0">
+                <i data-lucide="info" class="w-5 h-5"></i>
+              </div>
+              <div class="text-xs sm:text-sm">
+                <div class="font-bold mb-0.5">Catatan Pemilik Toko:</div>
+                <p class="text-amber-900/90 leading-relaxed italic">
+                  "Toko terus berusaha melengkapi ketersediaan produk oleh-oleh khas secara bertahap pascapandemi demi melayani wisatawan yang berkunjung ke Ende dan pulau Flores tercinta."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Narrative Content -->
+          <div class="lg:col-span-6 space-y-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 text-amber-900 inline-block mb-3">
+                Tentang Kami
+              </span>
+              <h2 class="font-serif text-2xl sm:text-4xl font-extrabold text-stone-900 tracking-tight leading-tight">
+                Pusat Oleh-Oleh NTT "Kembar Jaya" di Ende
+              </h2>
+            </div>
+
+            <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+              Berlokasi strategis di <strong>Simpang PLTD, Jl. Gatot Soebroto, Kelurahan Mautapaga, Ende</strong>, Toko <strong>"Kembar Jaya"</strong> hadir sebagai destinasi utama bagi para wisatawan, perantau, maupun warga lokal yang mencari buah tangan otentik khas Nusa Tenggara Timur.
+            </p>
+
+            <p class="text-stone-600 text-sm sm:text-base leading-relaxed">
+              Kami menyatukan berbagai kekayaan budaya dan citarasa lokal Ende serta kepulauan NTT ke dalam satu tempat yang nyaman: mulai dari <em>kopi asli Flores</em> yang harum semerbak, aneka camilan gurih tradisional seperti <em>jagung titi</em> dan <em>kacang goreng pasir</em>, hingga koleksi busana <em>kain tenun ikat</em> bermotif adiluhung hasil tangan terampil pengrajin NTT.
+            </p>
+
+            <!-- 3 Core Pillars -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+              <div class="p-4 rounded-xl bg-stone-50 border border-stone-200 text-center">
+                <div class="text-amber-800 font-bold text-base">Bersahabat</div>
+                <div class="text-xs text-stone-500 mt-1">Layanan hangat &amp; ramah keluarga</div>
+              </div>
+              <div class="p-4 rounded-xl bg-stone-50 border border-stone-200 text-center">
+                <div class="text-amber-800 font-bold text-base">Terjangkau</div>
+                <div class="text-xs text-stone-500 mt-1">Harga bersahabat untuk semua</div>
+              </div>
+              <div class="p-4 rounded-xl bg-stone-50 border border-stone-200 text-center">
+                <div class="text-amber-800 font-bold text-base">Asli NTT</div>
+                <div class="text-xs text-stone-500 mt-1">Produk lokal bumi Flobamora</div>
+              </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="pt-2">
+              <a 
+                href="#lokasi" 
+                class="inline-flex items-center gap-2 text-sm font-bold text-amber-900 hover:text-amber-700 underline underline-offset-4"
+              >
+                <span>Lihat Alamat &amp; Petunjuk Arah Toko</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ULASAN PELANGGAN SECTION ================= -->
+    <section id="ulasan" class="py-16 sm:py-24 bg-[#faf8f5]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header Ulasan -->
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 text-amber-900 inline-block mb-3">
+            Ulasan Pelanggan
+          </span>
+          <h2 class="font-serif text-2xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+            Dipercaya Oleh Pelanggan &amp; Wisatawan
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base mt-2">
+            Pengalaman nyata dari mereka yang telah berkunjung dan berbelanja di Kembar Jaya Ende.
+          </p>
+        </div>
+
+        <!-- Rating Summary Card Banner -->
+        <div class="max-w-2xl mx-auto bg-white rounded-3xl p-6 sm:p-8 border border-stone-200/80 shadow-md mb-12 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+          <div class="flex items-center gap-5">
+            <div class="text-4xl sm:text-5xl font-extrabold text-stone-900 font-serif">4,0</div>
+            <div>
+              <div class="flex text-amber-400 mb-1">
+                <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-amber-400"></i>
+                <i data-lucide="star" class="w-5 h-5 text-stone-300"></i>
+              </div>
+              <div class="text-xs font-semibold text-stone-600">Berdasarkan 29 Ulasan di Google Maps</div>
+            </div>
+          </div>
+
+          <a 
+            href="https://www.google.com/maps/search/?api=1&query=5M4C%2B65+Kel.+Mautapaga,+Kabupaten+Ende,+Nusa+Tenggara+Tim." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="px-5 py-2.5 rounded-xl border border-stone-300 hover:bg-stone-50 text-stone-800 text-xs font-semibold flex items-center gap-2 transition-colors shrink-0"
+          >
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+            <span>Buka Ulasan Google</span>
+          </a>
+        </div>
+
+        <!-- Customer Review Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Testimoni 1 (Highlight dari Data Asli) -->
+          <div class="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 shadow-xs flex flex-col justify-between card-hover-effect">
+            <div>
+              <div class="flex text-amber-400 mb-3">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <blockquote class="text-stone-700 text-sm leading-relaxed font-medium mb-4 italic">
+                “Toko kecil yang bersahabat. Oleh-oleh khas yang lengkap dan terjangkau.”
+              </blockquote>
+            </div>
+            <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-amber-100 text-amber-900 font-bold text-xs flex items-center justify-center">
+                P
+              </div>
+              <div>
+                <div class="font-bold text-stone-900 text-xs">Pelanggan Google Maps</div>
+                <div class="text-[11px] text-stone-400">Ulasan Terverifikasi</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimoni 2 (Highlight dari Data Asli) -->
+          <div class="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 shadow-xs flex flex-col justify-between card-hover-effect">
+            <div>
+              <div class="flex text-amber-400 mb-3">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 text-stone-300"></i>
+              </div>
+              <blockquote class="text-stone-700 text-sm leading-relaxed font-medium mb-4 italic">
+                “Tersedia produk oleh-oleh khas serta perlengkapan pakaian.”
+              </blockquote>
+            </div>
+            <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-blue-100 text-blue-900 font-bold text-xs flex items-center justify-center">
+                W
+              </div>
+              <div>
+                <div class="font-bold text-stone-900 text-xs">Wisatawan Flores</div>
+                <div class="text-[11px] text-stone-400">Ulasan Terverifikasi</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimoni 3 -->
+          <div class="bg-white p-6 sm:p-7 rounded-2xl border border-stone-200/80 shadow-xs flex flex-col justify-between card-hover-effect">
+            <div>
+              <div class="flex text-amber-400 mb-3">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <blockquote class="text-stone-700 text-sm leading-relaxed font-medium mb-4 italic">
+                “Koleksi kain tenunnya bagus dan penjualnya sangat ramah menjelaskan motifnya. Lokasinya dekat simpang PLTD jadi gampang dicari saat transit di Ende.”
+              </blockquote>
+            </div>
+            <div class="pt-4 border-t border-stone-100 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-emerald-100 text-emerald-900 font-bold text-xs flex items-center justify-center">
+                R
+              </div>
+              <div>
+                <div class="font-bold text-stone-900 text-xs">Rina &amp; Keluarga</div>
+                <div class="text-[11px] text-stone-400">Wisatawan Domestik</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= LOKASI, JAM OPERASIONAL & KONTAK SECTION ================= -->
+    <section id="lokasi" class="py-16 sm:py-24 bg-white border-t border-stone-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 text-amber-900 inline-block mb-3">
+            Lokasi &amp; Kontak
+          </span>
+          <h2 class="font-serif text-2xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+            Kunjungi Toko Kami di Ende
+          </h2>
+          <p class="text-stone-600 text-sm sm:text-base mt-2">
+            Kami siap menyambut Anda langsung di toko atau melayani pertanyaan seputar oleh-oleh via WhatsApp.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Left: Detailed Contact & Operating Info -->
+          <div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+            
+            <div class="bg-stone-50 p-6 sm:p-7 rounded-3xl border border-stone-200 space-y-6">
+              
+              <!-- Nama Usaha & Kategori -->
+              <div class="border-b border-stone-200 pb-4">
+                <span class="text-[11px] font-bold uppercase tracking-wider text-amber-800">Nama Usaha Resmi</span>
+                <h3 class="text-xl font-bold text-stone-900 mt-1">PUSAT OLEH - OLEH NTT "KEMBAR JAYA"</h3>
+                <p class="text-xs text-stone-500 mt-0.5">Toko Suvenir • Pusat Oleh-oleh • Toko Pakaian Khas</p>
+              </div>
+
+              <!-- Alamat Lengkap -->
+              <div class="space-y-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-stone-900 flex items-center gap-1.5">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-amber-700"></i> Alamat Lengkap
+                  </span>
+                  <button 
+                    type="button" 
+                    onclick="copyToClipboard('Simpang PLTD, Jl. Gatot Soebroto, Kel. Mautapaga, Kec. Ende Tim., Kabupaten Ende, Nusa Tenggara Timur', 'Alamat')"
+                    class="text-[11px] font-semibold text-amber-800 hover:text-amber-900 cursor-pointer flex items-center gap-1"
+                  >
+                    <i data-lucide="copy" class="w-3 h-3"></i> Salin
+                  </button>
+                </div>
+                <p class="text-xs sm:text-sm text-stone-600 leading-relaxed pl-5">
+                  Simpang PLTD, Jl. Gatot Soebroto, Kel. Mautapaga, Kec. Ende Tim., Kabupaten Ende, Nusa Tenggara Timur
+                </p>
+              </div>
+
+              <!-- Plus Code -->
+              <div class="space-y-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-stone-900 flex items-center gap-1.5">
+                    <i data-lucide="navigation-2" class="w-4 h-4 text-amber-700"></i> Plus Code (Google Maps)
+                  </span>
+                  <button 
+                    type="button" 
+                    onclick="copyToClipboard('5M4C+65 Kel. Mautapaga, Kabupaten Ende, Nusa Tenggara Tim.', 'Plus Code')"
+                    class="text-[11px] font-semibold text-amber-800 hover:text-amber-900 cursor-pointer flex items-center gap-1"
+                  >
+                    <i data-lucide="copy" class="w-3 h-3"></i> Salin
+                  </button>
+                </div>
+                <div class="pl-5">
+                  <code class="text-xs px-2.5 py-1 rounded-md bg-stone-200/70 text-stone-800 font-mono">
+                    5M4C+65 Kel. Mautapaga, Kabupaten Ende
+                  </code>
+                </div>
+              </div>
+
+              <!-- Jam Operasional -->
+              <div class="space-y-1.5">
+                <span class="text-xs font-bold text-stone-900 flex items-center gap-1.5">
+                  <i data-lucide="clock" class="w-4 h-4 text-amber-700"></i> Jam Operasional
+                </span>
+                <div class="pl-5 text-xs sm:text-sm text-stone-600">
+                  <span class="font-bold text-stone-800">Buka Setiap Hari</span> (Senin – Minggu)<br />
+                  Tutup pukul <strong>20.00 WITA</strong>
+                </div>
+              </div>
+
+              <!-- Telepon & WhatsApp -->
+              <div class="space-y-1.5">
+                <span class="text-xs font-bold text-stone-900 flex items-center gap-1.5">
+                  <i data-lucide="phone-call" class="w-4 h-4 text-emerald-700"></i> Kontak WhatsApp / Telepon
+                </span>
+                <div class="pl-5 flex items-center gap-3">
+                  <span class="text-base font-bold text-stone-900">0813-3808-3555</span>
+                  <button 
+                    type="button" 
+                    onclick="copyToClipboard('081338083555', 'Nomor Telepon')"
+                    class="p-1.5 rounded-lg bg-stone-200/80 hover:bg-stone-300 text-stone-700 text-xs"
+                    title="Salin Nomor"
+                  >
+                    <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Tombol Navigasi Langsung ke Google Maps -->
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=5M4C%2B65+Kel.+Mautapaga,+Kabupaten+Ende,+Nusa+Tenggara+Tim." 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-full py-4 rounded-2xl bg-amber-900 hover:bg-amber-800 text-white font-bold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-md shadow-amber-950/20 transition-all"
+            >
+              <i data-lucide="map" class="w-5 h-5"></i>
+              <span>Buka Petunjuk Arah di Google Maps</span>
+            </a>
+
+          </div>
+
+          <!-- Right: Interactive Google Maps Iframe -->
+          <div class="lg:col-span-7 flex flex-col">
+            <div class="w-full h-full min-h-[380px] lg:min-h-[480px] rounded-3xl overflow-hidden border-2 border-stone-200 shadow-md relative bg-stone-100">
+              <iframe 
+                title="Peta Lokasi Pusat Oleh-Oleh NTT Kembar Jaya"
+                src="https://maps.google.com/maps?q=Simpang+PLTD,+Jl.+Gatot+Soebroto,+Mautapaga,+Ende,+Nusa+Tenggara+Timur&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                class="w-full h-full absolute inset-0"
+              ></iframe>
+            </div>
+            <div class="flex items-center justify-between text-xs text-stone-500 mt-3 px-2">
+              <span>Simpang PLTD, Jl. Gatot Soebroto, Ende, NTT</span>
+              <a 
+                href="https://www.google.com/maps/search/?api=1&query=5M4C%2B65+Kel.+Mautapaga,+Kabupaten+Ende" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="font-semibold text-amber-800 hover:underline flex items-center gap-1"
+              >
+                <span>Lihat di App Maps</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-stone-950 text-stone-400 text-xs py-12 ethnic-border-top">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
+        
+        <!-- Kolom Brand -->
+        <div class="md:col-span-2 space-y-3">
+          <div class="flex items-center gap-2 text-white font-bold text-base">
+            <div class="w-8 h-8 rounded-lg bg-amber-800 text-white flex items-center justify-center">
+              <i data-lucide="gift" class="w-4 h-4 text-amber-300"></i>
+            </div>
+            <span>PUSAT OLEH - OLEH NTT "KEMBAR JAYA"</span>
+          </div>
+          <p class="text-stone-400 text-xs leading-relaxed max-w-md">
+            Destinasi terpercaya oleh-oleh khas Nusa Tenggara Timur di Ende. Menyediakan aneka makanan, kopi Flores, kerajinan souvenir, dan kain tenun ikat berkualitas dengan pelayanan ramah dan harga bersahabat.
+          </p>
+          <div class="pt-2 text-stone-400 text-xs">
+            <strong>Alamat:</strong> Simpang PLTD, Jl. Gatot Soebroto, Kel. Mautapaga, Kec. Ende Tim., Kabupaten Ende, NTT
+          </div>
+        </div>
+
+        <!-- Kolom Navigasi Cepat -->
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Navigasi Halaman</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#beranda" class="hover:text-amber-400 transition-colors">Beranda</a></li>
+            <li><a href="#produk" class="hover:text-amber-400 transition-colors">Katalog Oleh-Oleh</a></li>
+            <li><a href="#keunggulan" class="hover:text-amber-400 transition-colors">Keunggulan Layanan</a></li>
+            <li><a href="#tentang" class="hover:text-amber-400 transition-colors">Tentang Kembar Jaya</a></li>
+            <li><a href="#ulasan" class="hover:text-amber-400 transition-colors">Ulasan Pelanggan</a></li>
+            <li><a href="#lokasi" class="hover:text-amber-400 transition-colors">Lokasi &amp; Peta Maps</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolom Kontak Cepat -->
+        <div>
+          <h4 class="text-white font-bold text-xs uppercase tracking-wider mb-3">Kontak &amp; Pesanan</h4>
+          <ul class="space-y-2 text-xs">
+            <li class="flex items-center gap-2">
+              <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400"></i>
+              <a href="https://wa.me/6281338083555" class="hover:text-white transition-colors">0813-3808-3555</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="clock" class="w-3.5 h-3.5 text-amber-400"></i>
+              <span>Buka Setiap Hari s/d 20.00 WITA</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i>
+              <span>Ende, Flores, Nusa Tenggara Timur</span>
+            </li>
+          </ul>
+
+          <div class="mt-4 pt-4 border-t border-stone-800">
+            <a 
+              href="https://wa.me/6281338083555" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-xs transition-colors"
+            >
+              <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+              <span>Chat WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Line -->
+      <div class="pt-8 border-t border-stone-800 text-center text-stone-500 text-[11px] flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div>
+          &copy; 2026 PUSAT OLEH - OLEH NTT "KEMBAR JAYA" • Ende, Flores, NTT. Semua hak dilindungi.
+        </div>
+        <div class="text-stone-400">
+          Rating Google 4.0 ★ (29 Ulasan)
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODAL DETAIL PRODUK (QUICK VIEW) ================= -->
+  <div id="product-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 hidden">
+    <!-- Backdrop -->
+    <div id="modal-backdrop" class="fixed inset-0 bg-stone-950/70 backdrop-blur-xs modal-backdrop"></div>
+
+    <!-- Modal Card -->
+    <div id="modal-content" class="relative w-full max-w-2xl bg-white rounded-3xl overflow-hidden shadow-2xl z-10 modal-content max-h-[90vh] flex flex-col">
+      
+      <!-- Modal Header / Close Button -->
+      <button 
+        type="button" 
+        id="modal-close-btn" 
+        class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-black/50 hover:bg-black/80 text-white flex items-center justify-center transition-colors cursor-pointer"
+        title="Tutup Modal"
+      >
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="overflow-y-auto flex-1 p-0">
+        <!-- Modal Image Header -->
+        <div class="relative aspect-16/9 bg-stone-900">
+          <img 
+            id="modal-image" 
+            src="" 
+            alt="Produk Detail" 
+            class="w-full h-full object-cover object-center"
+          />
+          <div class="absolute bottom-4 left-4 flex gap-2">
+            <span id="modal-badge" class="px-2.5 py-1 text-xs font-semibold rounded-full text-white bg-amber-600">
+              Badge
+            </span>
+            <span id="modal-category" class="px-2.5 py-1 text-xs font-medium rounded-full bg-black/60 text-white backdrop-blur-md">
+              Kategori
+            </span>
+          </div>
+        </div>
+
+        <!-- Modal Body Content -->
+        <div class="p-6 sm:p-8 space-y-5">
+          <div>
+            <span class="text-[11px] font-bold text-amber-800 uppercase tracking-wider block mb-1">Kembar Jaya Ende</span>
+            <h3 id="modal-title" class="text-xl sm:text-2xl font-bold text-stone-900 leading-snug">Nama Produk</h3>
+            
+            <div class="mt-2 text-xl font-extrabold text-amber-900" id="modal-price">
+              Rp 0
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-bold text-stone-900 uppercase tracking-wider mb-1.5">Deskripsi Produk</h4>
+            <p id="modal-desc" class="text-stone-600 text-xs sm:text-sm leading-relaxed">
+              Deskripsi lengkap produk...
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-xs font-bold text-stone-900 uppercase tracking-wider mb-2">Keunggulan &amp; Spesifikasi</h4>
+            <ul id="modal-highlights" class="space-y-2">
+              <!-- Diisi otomatis oleh JavaScript -->
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer Action -->
+      <div class="p-4 sm:p-6 bg-stone-50 border-t border-stone-100 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div class="text-xs text-stone-500 hidden sm:block">
+          Konsultasi ketersediaan langsung dengan toko kami di Ende
+        </div>
+        <a 
+          id="modal-wa-btn" 
+          href="#" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full sm:w-auto px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-md transition-colors"
+        >
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Pesan / Tanya via WhatsApp</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================= FLOATING ACTION: WHATSAPP ================= -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3 pointer-events-none">
+    
+    <!-- Back to top button -->
+    <button 
+      type="button" 
+      id="back-to-top" 
+      class="w-11 h-11 rounded-full bg-white text-stone-700 hover:text-stone-950 border border-stone-300 shadow-md flex items-center justify-center opacity-0 pointer-events-none transition-all duration-300 pointer-events-auto cursor-pointer"
+      title="Kembali ke atas"
+    >
+      <i data-lucide="chevron-up" class="w-5 h-5"></i>
+    </button>
+
+    <!-- Floating WhatsApp Widget -->
+    <div class="relative group pointer-events-auto">
+      <!-- Tooltip Greeting -->
+      <div class="absolute right-16 top-1/2 -translate-y-1/2 px-3 py-1.5 rounded-xl bg-stone-900 text-white text-xs font-medium shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity hidden sm:block pointer-events-none">
+        Tanya Oleh-Oleh via WhatsApp 👋
+      </div>
+      
+      <!-- Button -->
+      <a 
+        href="https://wa.me/6281338083555?text=Halo%20Pusat%20Oleh-Oleh%20NTT%20Kembar%20Jaya,%20saya%20ingin%20bertanya%20seputar%20oleh-oleh%20khas%20NTT..." 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center shadow-xl whatsapp-pulse transition-transform hover:scale-105"
+        title="Chat WhatsApp Kembar Jaya"
+        aria-label="Chat WhatsApp Toko Kembar Jaya"
+      >
+        <i data-lucide="message-circle" class="w-7 h-7"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <!-- ================= TOAST NOTIFICATION ================= -->
+  <div 
+    id="toast-notification" 
+    class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 px-5 py-3 rounded-2xl bg-stone-900/95 backdrop-blur-md text-white text-xs font-semibold shadow-2xl flex items-center gap-2 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 border border-stone-700"
+  >
+    <i data-lucide="check" class="w-4 h-4 text-emerald-400"></i>
+    <span id="toast-message">Notifikasi</span>
+  </div>
+
+  <!-- Application Scripts -->
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+

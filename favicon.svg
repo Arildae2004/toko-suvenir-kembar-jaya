@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9a3412" />
+      <stop offset="50%" stop-color="#7c2d12" />
+      <stop offset="100%" stop-color="#451a03" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#fef3c7" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="url(#bgGrad)" stroke="#f59e0b" stroke-width="3" />
+  <path d="M 64 11 L 71 18 L 64 25 L 57 18 Z" fill="#fbbf24" />
+  <path d="M 11 64 L 18 71 L 25 64 L 18 57 Z" fill="#fbbf24" />
+  <path d="M 117 64 L 110 71 L 103 64 L 110 57 Z" fill="#fbbf24" />
+  <path d="M 64 117 L 71 110 L 64 103 L 57 110 Z" fill="#fbbf24" />
+  <rect x="34" y="56" width="60" height="46" rx="8" fill="url(#boxGrad)" stroke="#d97706" stroke-width="2" />
+  <rect x="57" y="56" width="14" height="46" fill="url(#goldGrad)" />
+  <rect x="34" y="74" width="60" height="12" fill="url(#goldGrad)" />
+  <rect x="30" y="48" width="68" height="12" rx="4" fill="#ffffff" stroke="#d97706" stroke-width="2" />
+  <rect x="57" y="48" width="14" height="12" fill="url(#goldGrad)" />
+  <path d="M 64 48 C 50 28 34 38 52 46 C 58 48 64 48 64 48 Z" fill="url(#goldGrad)" stroke="#b45309" stroke-width="1.5" />
+  <path d="M 64 48 C 78 28 94 38 76 46 C 70 48 64 48 64 48 Z" fill="url(#goldGrad)" stroke="#b45309" stroke-width="1.5" />
+  <circle cx="64" cy="48" r="5" fill="#fef08a" stroke="#b45309" stroke-width="2" />
+</svg>

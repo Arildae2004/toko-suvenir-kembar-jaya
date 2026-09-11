@@ -252,9 +252,60 @@ document.addEventListener('DOMContentLoaded', () => {
   if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeProductModal);
   if (modalBackdrop) modalBackdrop.addEventListener('click', closeProductModal);
 
+  // --- PROJECT SELECTOR MODAL LOGIC ---
+  const projectSelectorModal = document.getElementById('project-selector-modal');
+  const projectSelectorBackdrop = document.getElementById('project-selector-backdrop');
+  const projectSelectorCloseBtn = document.getElementById('project-selector-close-btn');
+  const projectSelectorFooterCloseBtn = document.getElementById('project-selector-footer-close-btn');
+  const projectSelectorBtn = document.getElementById('project-selector-btn');
+  const mobileProjectSelectorBtn = document.getElementById('mobile-project-selector-btn');
+  const drawerProjectSelectorBtn = document.getElementById('drawer-project-selector-btn');
+
+  window.openProjectSelectorModal = function() {
+    if (!projectSelectorModal) return;
+    projectSelectorModal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  };
+
+  window.closeProjectSelectorModal = function() {
+    if (!projectSelectorModal) return;
+    projectSelectorModal.classList.add('hidden');
+    document.body.style.overflow = '';
+  };
+
+  if (projectSelectorBtn) {
+    projectSelectorBtn.addEventListener('click', window.openProjectSelectorModal);
+  }
+  if (mobileProjectSelectorBtn) {
+    mobileProjectSelectorBtn.addEventListener('click', window.openProjectSelectorModal);
+  }
+  if (drawerProjectSelectorBtn) {
+    drawerProjectSelectorBtn.addEventListener('click', () => {
+      closeMobileMenu();
+      window.openProjectSelectorModal();
+    });
+  }
+  if (projectSelectorCloseBtn) {
+    projectSelectorCloseBtn.addEventListener('click', window.closeProjectSelectorModal);
+  }
+  if (projectSelectorFooterCloseBtn) {
+    projectSelectorFooterCloseBtn.addEventListener('click', window.closeProjectSelectorModal);
+  }
+  if (projectSelectorBackdrop) {
+    projectSelectorBackdrop.addEventListener('click', window.closeProjectSelectorModal);
+  }
+
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && productModal && !productModal.classList.contains('hidden')) {
-      closeProductModal();
+    if (e.key === 'Escape') {
+      if (productModal && !productModal.classList.contains('hidden')) {
+        closeProductModal();
+      }
+      if (projectSelectorModal && !projectSelectorModal.classList.contains('hidden')) {
+        closeProjectSelectorModal();
+      }
     }
   });
 
